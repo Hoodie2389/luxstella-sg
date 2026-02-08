@@ -488,6 +488,31 @@ ul {
     font-size: 0.95rem;
 }
 
+/* Stat Number Text Alternative */
+.stat-number-text {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    /* Removed opacity: 0 to ensure visibility. Parent container handles fade-in. */
+}
+
+.visible .stat-number-text {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.visible .stat-item:nth-child(2) .stat-number-text {
+    animation-delay: 0.5s;
+}
+
+.visible .stat-item:nth-child(3) .stat-number-text {
+    animation-delay: 0.7s;
+}
+
 .service-link {
     font-size: 0.9rem;
     font-weight: 700;
